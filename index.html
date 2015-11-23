@@ -8,6 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/updates.css" >
   </head>
   <body bgcolor="#E6E6FA">
     <section class="page-header">
@@ -52,6 +53,25 @@
 
 	  <h2 id = "videos"> Videos </h2>
 	  <p> We will be posting our project updates using small video clips along with the description here.</p>
+
+	  <h3 id = "week1"> Week-1 Update </h3>
+	  <p>We spent the first week exploring the OptiTrack software and the VRUI toolkit. We also fixed the virtual wall set up which has five grayscale cameras and IR emitters as shown in the figure below. The IR emitters emit IR radiations and the cameras are used to capture the reflected radiations from rigid bodies. Rigid bodies are made using retro-reflective markers as they reflect the IR radiations back to the source with minimum scattering. That is why the camera detector is attached very close to the IR emitters. Moreover, we also created a wand like rigid body using 3 markers and a selfie stick which is also shown below.</p><br>
+	  <div id="week1_images">
+	  	<figure>
+  			<img src="img/vrwall.jpg" width="400" height="250" alt="vrWALL"/>
+  			<figcaption>Fig1. - Virtual Wall Setup</figcaption>
+		</figure>
+		<figure>
+  			<img src="img/marker_rod.jpg" width="400" height="250" alt="MarkerRod" />
+  			<figcaption>Fig2. - Markers + Rod</figcaption>
+		</figure>
+	  </div>
+	  <p>OptiTrack Motive is the motion capture system that we are using to collect the position as well as the orientation data of rigid bodies collected from the cameras. Once this data is collected and processed, we will send it to the Virtual Reality User Interface (VRUI) toolkit running on a different machine via VRPN (Virtual Reality Peripheral Network). Using this data and the toolkit, we can develop VR applications in a scalable and portable fashion.</p>
+
+	  <h3 id = "week2"> Week-2 Update </h3>
+	  <p>The next step was to calibrate the setup such that the rigid bodies are detected as what they should be. We found some good tutorials on how to perform the calibration but we faced some problems with the accurate placement of markers on the rigid body because of which calibration was taking a lot of time which otherwise should finish in less than 10 minutes. After some experimentation and research, we resolved the error by using proper wands built with nuts and bolts. Using the selfie stick as the wand with markers taped on it was not a good idea in the first place, but it was fun. Below is the demonstration of the calibration process:-</p> <br>
+
+	  <p>Other than calibration, we also installed the VRUI toolkit on the Linux machine and played with some Example Programs. It seems quite interesting and now the next step will be to get the OptiTrack data on the VRUI toolkit.</p>
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/jiteshgupta/InVIRT">InVIRT: Virtual Reality Experience</a> is maintained by <a href="https://github.com/jiteshgupta">jiteshgupta</a>.</span>
 
