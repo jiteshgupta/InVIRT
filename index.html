@@ -25,39 +25,43 @@
         <li><a href="#Objective">Objective</a></li>
         <li><a href="#motivation">Motivation</a></li>
   		<li><a href="#components">Project Components</a></li>
-  		<li><a href="#diagram">Block Diagram</a></li>
+  		<li><a href="#diagram">System Design</a></li>
   		<li><a href="#videos">Videos/Updates</a></li>
   		<li><a href="#refs">References</a></li>
 	  </ul>
 	
       <h2 id = "goal"> Objective </h2>
-      <p>The objective of this project is to create a virtual reality application displaying real time tracking information along with an interacting virtual experience. This is to be achieved using a motion tracking system and Opti-Track Motive. The virtual reality - motion tracking system, set up in xLab, UPenn has 5 grayscale camera sensors equipped with IR emitters. Our final goal would be to integrate it with user interfaces such as VRUI, Unity3D and a physics engine like LiquidFun that are built for virtual reality based applications and also provide a more immersive experience with Oculus Rift.</p>
+      <p><q><i><strong>Explore potential of a low cost marker based motion capture system and develop virtual reality applications using real-time tracking data to provide an interactive VR experience.</i></strong></q></p>
+
+	  <p align="justify">Using this motion capture system, we aim to develop innovative and exciting VR applicaions and moreover, convert simple games into interesting ones by using real time entities to control virtual game objects. In order to achieve this, we are going to use the VR wall set up in xLab, UPenn which has 5 IR emitters equipped with 5 grayscale camera sensors, configured in a fashion such that it acts as a  marker based motion capture system.</p>
+	  <p align="justify">We wil be using OptiTrack Motive to capture tracking data from the motion capture system and our final goal would be to integrate that data with user interfaces such as VRUI, Unity3D and a physics engine like LiquidFun that are built for virtual reality based applications and finally, provide a more immersive experience with Oculus Rift.</p>
       
       <h2 id = "motivation"> Motivation </h2>
       <ul>
-      	<li><b>Beneficial :- </b>There are lot of areas where virtual reality can be beneficial, for example, building advanced games, improving educational practices, entertainment etc. We plan to explore, if not all, atleast some of them.</li>
-        <li><b>Challenging :- </b>The field of virtual reality has been evolving recently and very few resources are available for developers. That is why we find it very challenging and we hope to contribute something to the VR community with our application that would integrate motion tracking with Unity. </li>
-  		<li><b>Exciting :- </b> Developing a virtual reality application is definitely exciting because you get to play with something that is not real. The words "Creating Virtual Reality" should be sufficient enough to understand the excitement behind it.</li>
+      	<li><b>Beneficial :- </b><p align="justify">There are lot of areas where virtual reality can be beneficial, for example, building advanced games, improving educational practices, entertainment, healthcare etc. We plan to explore, if not all, atleast some of them.</p></li>
+        <li><b>Challenging :- </b><p align="justify">The field of virtual reality has been evolving recently and very few resources are available for developers. That is why we find it very challenging and we hope to contribute something to the VR community with our applications that would integrate motion tracking with Unity.</p></li>
+  		<li><b>Exciting :- </b><p align="justify">Developing a virtual reality application is definitely exciting because you get to play with something that is not real. The words "Creating Virtual Reality" should be sufficient enough to understand the excitement behind it.</p></li>
   	  </ul>
       
       <h2 id = "components"> Project Components </h2>
       <ul>
         <li><b>Virtual Wall setup</b> having 5 grayscale cameras and IR emitters</li>
+        <li><b>Calibration Square & Wand</b> to calibrate the VR wall setup</li>
         <li><b>Rigid bodies</b> designed using retro-reflective markers</li>
   		<li><b>OptiTrack Motive</b> for collecting and processing data of rigid bodies</li>
   		<li><b>VRUI toolkit</b> to develop the virtual reality application</li>
-  		<li><b>LiquidFun physics engine</b> to add VR effects</li>
+  		<li><b>LiquidFun physics engine</b> to add special VR effects</li>
 		<li><b>Unity3D</b> cross-platform game developement platform</li>
 	  </ul>
 	  
-	  <h2 id = "diagram"> Block Diagram </h2>
-	  <img src="img/BlockDiagram.png" alt="HTML5 Icon" style="width:792px;height:322px;"> 
+	  <h2 id = "diagram"> System Design </h2>
+	  <img src="img/SystemDesign.png" alt="HTML5 Icon" style="width:900px;height:350px;"> 
 
 	  <h2 id = "videos"> Videos/Updates </h2>
 	  <p> We will be posting our project updates using small video clips along with the description here.</p>
 
 	  <h3 id = "week1"> Week-1 Update </h3>
-	  <p>We spent the first week exploring the OptiTrack software and the VRUI toolkit. We also fixed the virtual wall set up which has five grayscale cameras and IR emitters as shown in the figure below. The IR emitters emit IR radiations and the cameras are used to capture the reflected radiations from rigid bodies. Rigid bodies are made using retro-reflective markers as they reflect the IR radiations back to the source with minimum scattering. That is why the camera detector is attached very close to the IR emitters. Moreover, we also created a wand like rigid body using 3 markers and a selfie stick which is also shown below.</p><br>
+	  <p align="justify">We spent the first week exploring the OptiTrack software and the VRUI toolkit. We also fixed the virtual wall set up which has five grayscale cameras and IR emitters as shown in the figure below. The IR emitters emit IR radiations and the cameras are used to capture the reflected radiations from rigid bodies. Rigid bodies are made using retro-reflective markers as they reflect the IR radiations back to the source with minimum scattering. That is why the camera detector is attached very close to the IR emitters. Moreover, we also created a wand like rigid body using 3 markers and a selfie stick which is also shown below.</p><br>
 	  <div id="week1_images">
 	  	<figure>
   			<img src="img/vrwall.jpg" width="400" height="250" alt="vrWALL"/>
@@ -68,43 +72,43 @@
   			<figcaption>Fig2. - Markers + Rod</figcaption>
 		</figure>
 	  </div>
-	  <p>OptiTrack Motive is the motion capture system that we are using to collect the position as well as the orientation data of rigid bodies collected from the cameras. Once this data is collected and processed, we will send it to the Virtual Reality User Interface (VRUI) toolkit running on a different machine via VRPN (Virtual Reality Peripheral Network). Using this data and the toolkit, we can develop VR applications in a scalable and portable fashion.</p>
+	  <p align="justify">OptiTrack Motive is the motion capture system that we are using to collect the position as well as the orientation data of rigid bodies collected from the cameras. Once this data is collected and processed, we will send it to the Virtual Reality User Interface (VRUI) toolkit running on a different machine via VRPN (Virtual Reality Peripheral Network). Using this data and the toolkit, we can develop VR applications in a scalable and portable fashion.</p>
 
 	  <h3 id = "week2"> Week-2 Update </h3>
-	  <p>The next step was to calibrate the setup such that the rigid bodies are detected as what they should be. We found some good tutorials on how to perform the calibration but we faced some problems with the accurate placement of markers on the rigid body because of which calibration was taking a lot of time which otherwise should finish in less than 10 minutes. After some experimentation and research, we resolved the error by using proper wands built with nuts and bolts. Using the selfie stick as the wand with markers taped on it was not a good idea in the first place, but it was fun. Below is the demonstration of the calibration process:-</p>
+	  <p align="justify">The next step was to calibrate the setup such that the rigid bodies are detected as what they should be. We found some good tutorials on how to perform the calibration but we faced some problems with the accurate placement of markers on the rigid body because of which calibration was taking a lot of time which otherwise should finish in less than 10 minutes. After some experimentation and research, we resolved the error by using proper wands built with nuts and bolts. Using the selfie stick as the wand with markers taped on it was not a good idea in the first place, but it was fun. Below is the demonstration of the calibration process:-</p>
 	  <div align="center">
 	  	<iframe width="560" height="315" src="https://www.youtube.com/embed/bzIKi_x2N5I" frameborder="0" allowfullscreen></iframe>
       </div>
 
-	  <p>Other than calibration, we also installed the VRUI toolkit on the Linux machine and played with some Example Programs. It seems quite interesting and now the next step will be to get the OptiTrack data on the VRUI toolkit.</p>
+	  <p align="justify">Other than calibration, we also installed the VRUI toolkit on the Linux machine and played with some Example Programs. It seems quite interesting and now the next step will be to get the OptiTrack data on the VRUI toolkit.</p>
 
 	  <h3 id = "week3"> Week-3 Update </h3>
 	  <p>We followed the tutorial included in the VRUI toolkit to synchronize VRUI with OptiTrack via VRPN. We faced a lot of problems while doing this but were able to figure things out with the help of Oliver Kreylos, who developed the VRUI VR toolkit.</p>
 
 	  <h3 id = "week4"> Week-4 Update </h3>
-	  <p>For VR application development, we shifted from VRUI toolkit to Unity 3D because of a lack of resources with VRUI. We first synchronized OptiTrack Motive and Unity and then developed a basic ping pong game on Unity to control one of the rackets by tracking position of a rigid body. Here is a quick demo:-</p><br>
+	  <p align="justify">For VR application development, we shifted from VRUI toolkit to Unity 3D because of a lack of resources with VRUI. We first synchronized OptiTrack Motive and Unity and then developed a basic ping pong game on Unity to control one of the rackets by tracking position of a rigid body. Here is a quick demo:-</p><br>
 	  <div align="center">
 	  	<iframe width="560" height="315" src="https://www.youtube.com/embed/QHz3vFQ_f90" frameborder="0" allowfullscreen></iframe>
       </div>
 	  
 	  <h3 id = "week5"> Week-5 Update </h3>
-	  <p>We created the pong game to observe the precision level of the tracking system and noticed that we can actually create applications with very high tracking accuracy. We thought of a lot of ideas from different areas namely- entertainment, educational and healthcare and then finally, we decided to create a virtual drum simulator. It is like creating virtual drums, where the drummer can play with the drum sticks in air and they won't have to carry their bulky drum kit anymore. We created a basic drum set in Unity and associated sounds with different parts of the drum. After that, we started tracking a rigid body to play the drums. Here is a quick demo:-</p>
+	  <p align="justify">We created the pong game to observe the precision level of the tracking system and noticed that we can actually create applications with very high tracking accuracy. We thought of a lot of ideas from different areas namely- entertainment, educational and healthcare and then finally, we decided to create a virtual drum simulator. It is like creating virtual drums, where the drummer can play with the drum sticks in air and they won't have to carry their bulky drum kit anymore. We created a basic drum set in Unity and associated sounds with different parts of the drum. After that, we started tracking a rigid body to play the drums. Here is a quick demo:-</p>
 	  <div align="center">
 	  	<iframe width="560" height="315" src="https://www.youtube.com/embed/w1UUOsvHdY0" frameborder="0" allowfullscreen></iframe>
       </div>
-      <p>Over the Thanksgiving break, our drum sticks arrived and we hooked up the tracking markers on them. Now we can play the drums with both the sticks. Moreover, we also unpacked the Oculus Rift to run the virtual drums application and It looked super awesome :)</p> 
+      <p align="justify">Over the Thanksgiving break, our drum sticks arrived and we hooked up the tracking markers on them. Now we can play the drums with both the sticks. Moreover, we also unpacked the Oculus Rift to run the virtual drums application and It looked super awesome :)</p> 
       <div align="center">
 	  	<iframe width="560" height="315" src="https://www.youtube.com/embed/SFptWL4RZuo" frameborder="0" allowfullscreen></iframe>
       </div>
       
       <h3 id = "week6"> Week-6 Update </h3>
-      <p> This week, we spent a lot of time to smoothen the drummming mechanism. We tried different camera settings and tracking algorithms to achieve high level of accuracy with very less delay but were not able to completely resolve this trade off. Thereofer, in the mean time, we changed the color of the drums, replaced the spheres with actual drumsticks and added some collision effects in our virtual drum simulator. Here is a quick demo:-</p>
+      <p align="justify">This week, we spent a lot of time to smoothen the drummming mechanism. We tried different camera settings and tracking algorithms to achieve high level of accuracy with very less delay but were not able to completely resolve this trade off. Thereofer, in the mean time, we changed the color of the drums, replaced the spheres with actual drumsticks and added some collision effects in our virtual drum simulator. Here is a quick demo:-</p>
       <div align="center">
 	  	<iframe width="560" height="315" src="https://www.youtube.com/embed/bVM0cyqSz8A" frameborder="0" allowfullscreen></iframe>
       </div>
 
       <h3 id = "week7"> Week-7 Update </h3>
-      <p>We got a very good feedback from Prof. Rahul Mangharam and other students after the Demo Day 1 (4th December'2015). We discussed the next steps for the final week and decided that we will be working on smoothening the drumming process and exploring how fast a person can drum. Moreover, if time permits, we will also try to calibrate the environment automatically for every new drummer. Following our reach goal of tracking very fast drumming, we completely changed the tracking algorithm and also bought a new optimized drumset from Unity Asset Store. Here is a quick demo of how fast a person can drum using our virtual drum simulator:-</p> 
+      <p align="justify">We got a very good feedback from Prof. Rahul Mangharam and other students after the Demo Day 1 (4th December'2015). We discussed the next steps for the final week and decided that we will be working on smoothening the drumming process and exploring how fast a person can drum. Moreover, if time permits, we will also try to calibrate the environment automatically for every new drummer. Following our reach goal of tracking very fast drumming, we completely changed the tracking algorithm and also bought a new optimized drumset from Unity Asset Store. Here is a quick demo of how fast a person can drum using our virtual drum simulator:-</p> 
 
       <div align="center">
 	  	<iframe width="560" height="315" src="https://www.youtube.com/embed/I8DUmZp1hlY" frameborder="0" allowfullscreen></iframe>
