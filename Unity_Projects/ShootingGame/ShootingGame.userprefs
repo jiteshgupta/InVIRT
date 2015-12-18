@@ -1,0 +1,13 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Optitrack\OptitrackRigidBodyManager.cs">
+    <Files>
+      <File FileName="Assets\Optitrack\OptitrackRigidBody.cs" Line="84" Column="19" />
+      <File FileName="Assets\Optitrack\OptitrackRigidBodyManager.cs" Line="4" Column="18" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
