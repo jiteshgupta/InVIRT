@@ -63,14 +63,45 @@
 
 	  <h3 id = "week1"> Week-1 Update </h3>
 	  <p align="justify">We spent the first week exploring the OptiTrack software and the VRUI toolkit. We also fixed the virtual wall set up which has five grayscale cameras and IR emitters as shown in the figure below. The IR emitters emit IR radiations and the cameras are used to capture the reflected radiations from rigid bodies. Rigid bodies are made using retro-reflective markers as they reflect the IR radiations back to the source with minimum scattering. That is why the camera detector is attached very close to the IR emitters. Moreover, we also created a wand like rigid body using 3 markers and a selfie stick which is also shown below.</p><br>
-	  <div id="week1_images">
+	  <div class="container">
 	  	<figure>
-  			<img src="img/vrwall.jpg" width="400" height="250" alt="vrWALL"/>
+  			<img src="img/vrwall.jpg" width="320" height="240" alt="vrWALL"/>
   			<figcaption>Fig1. - Virtual Wall Setup</figcaption>
 		</figure>
+	  </div>
+
+	  <div class="container">
 		<figure>
-  			<img src="img/marker_rod.jpg" width="400" height="250" alt="MarkerRod" />
+  			<img src="img/marker_rod.jpg" width="320" height="240" alt="MarkerRod" />
   			<figcaption>Fig2. - Markers + Rod</figcaption>
+		</figure>
+	  </div>
+
+	  <div class="container">
+	  	<figure>
+  			<img src="img/IREmitter.jpg" width="320" height="240" alt="vrWALL"/>
+  			<figcaption>Fig3. - IR Emitters</figcaption>
+		</figure>
+	  </div>
+
+	  <div class="container">
+		<figure>
+  			<img src="img/Camera.jpg" width="320" height="240" alt="MarkerRod" />
+  			<figcaption>Fig4. - Camera Sensors + IR Emiiters</figcaption>
+		</figure>
+	  </div>
+
+	  <div class="container">
+	  	<figure>
+  			<img src="img/MarkerWand.jpg" width="320" height="240" alt="vrWALL"/>
+  			<figcaption>Fig5. - Calibration Wand</figcaption>
+		</figure>
+	  </div>
+
+	  <div class="container">
+		<figure>
+  			<img src="img/RigidBodies.jpg" width="320" height="240" alt="MarkerRod" />
+  			<figcaption>Fig6. - Rigid Bodies </figcaption>
 		</figure>
 	  </div>
 	  <p align="justify">OptiTrack Motive is the motion capture system that we are using to collect the position as well as the orientation data of rigid bodies collected from the cameras. Once this data is collected and processed, we will send it to the Virtual Reality User Interface (VRUI) toolkit running on a different machine via VRPN (Virtual Reality Peripheral Network). Using this data and the toolkit, we can develop VR applications in a scalable and portable fashion.</p>

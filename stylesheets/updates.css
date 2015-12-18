@@ -1,6 +1,9 @@
-#week1_images {
-    text-align: center;
+div.container {
+      display:inline-block;
 }
-figure,iframe {
+figcaption {
+	text-align: center;
+}
+iframe {
     display: inline-block;
 }
