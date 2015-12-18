@@ -1,10 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-//=============================================================================----
-// Author: Bradley Newman - USC Worldbuilding Media Lab - worldbuilding.usc.edu
-//=============================================================================----
-
 // This script will read the tracking data from OptitrackRigidBodyManager.cs
 // for the rigid body that corresponds to the ID defined in this script.
 // Usage: Attach OptitrackRigidBody.cs to an empty Game Object
